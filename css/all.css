@@ -1,0 +1,453 @@
+@font-face {
+	font-family: "PTSerif-Regular";
+		src: 
+			url("../fonts/PTSerif-Regular/PTSerif-Regular.eot?#iefix") format("embedded-opentype"),  
+			url("../fonts/PTSerif-Regular/PTSerif-Regular.woff") format("woff"), 
+			url("../fonts/PTSerif-Regular/PTSerif-Regular.ttf")  format("truetype"), 
+			url("../fonts/PTSerif-Regular/PTSerif-Regular.svg#PTSerif-Regular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Oswald-Regular";
+		src: 
+			url("../fonts/Oswald-Regular/Oswald-Regular.eot?#iefix") format("embedded-opentype"),  
+			url("../fonts/Oswald-Regular/Oswald-Regular.woff") format("woff"), 
+			url("../fonts/Oswald-Regular/Oswald-Regular.ttf")  format("truetype"), 
+			url("../fonts/Oswald-Regular/Oswald-Regular.svg#Oswald-Regular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Oswald-Bold";
+		src: 
+			url("../fonts/Oswald-Bold/Oswald-Bold.eot?#iefix") format("embedded-opentype"),  
+			url("../fonts/Oswald-Bold/Oswald-Bold.woff") format("woff"), 
+			url("../fonts/Oswald-Bold/Oswald-Bold.ttf")  format("truetype"), 
+			url("../fonts/Oswald-Bold/Oswald-Bold.svg#Oswald-Bold") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "PTSerif-Bold";
+		src: 
+			url("../fonts/PTSerif-Bold/PTSerif-Bold.eot?#iefix") format("embedded-opentype"),  
+			url("../fonts/PTSerif-Bold/PTSerif-Bold.woff") format("woff"), 
+			url("../fonts/PTSerif-Bold/PTSerif-Bold.ttf")  format("truetype"), 
+			url("../fonts/PTSerif-Bold/PTSerif-Bold.svg#PTSerif-Bold") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Oswald-Light";
+		src: 
+			url("../fonts/Oswald-Light/Oswald-Light.eot?#iefix") format("embedded-opentype"),  
+			url("../fonts/Oswald-Light/Oswald-Light.woff") format("woff"), 
+			url("../fonts/Oswald-Light/Oswald-Light.ttf")  format("truetype"), 
+			url("../fonts/Oswald-Light/Oswald-Light.svg#Oswald-Light") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "PTSerif-Italic";
+		src: 
+			url("../fonts/PTSerif-Italic/PTSerif-Italic.eot?#iefix") format("embedded-opentype"),  
+			url("../fonts/PTSerif-Italic/PTSerif-Italic.woff") format("woff"), 
+			url("../fonts/PTSerif-Italic/PTSerif-Italic.ttf")  format("truetype"), 
+			url("../fonts/PTSerif-Italic/PTSerif-Italic.svg#PTSerif-Italic") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	margin: 0;
+	min-width: 320px;
+	color: #282828;
+	background: #fff;
+	font: 24px/26px "PTSerif-Regular", helvetica, sans-serif;
+}
+/* General reset */
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+form, fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img {
+	border-style: none;
+	display: block;
+}
+input, select, textarea {
+	vertical-align: middle;
+	display: block;
+	outline: none;
+	font: 100% "Oswald-Regular";
+	color: #e0e0e0;
+}
+label, input[type="submit"]{
+	cursor: pointer;
+}
+figure {
+	margin: 0;
+}
+a {
+	color: #f00;
+	text-decoration: none;
+}
+article ,aside ,audio,canvas,datalist,details,figcaption,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,summary,time,video{
+ display: block; 
+}
+a:hover {text-decoration: underline;}
+/* General settings */
+/*-------------------header----------------------------*/
+#header {
+	width: 100%;
+	padding: 30px 0 51px;
+}
+#header-wrapper {
+	max-width: 1132px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0 0 30px 0;
+}
+.logo {
+	float: left;
+}
+.logo a {
+	text-transform: uppercase;
+	font: 48px/50px "Oswald-Bold";
+	color: #eb3c00;
+}
+.logo a:hover {
+	text-decoration: none;
+}
+.logo span {
+	font: 18px/20px "PTSerif-Italic";
+	margin: 0 0 0 9px;
+}
+.login-box {
+	float: right;
+	padding: 5px 0 0;
+}
+.menu-btn-holder {
+	display: none;
+}
+.login-box .login {
+	float: left;
+	font: 13px/15px "PTSerif-Italic";
+	padding: 13px 34px 0 0;
+}
+.login-box .login img {
+	float: left;
+	margin: 2px 10px 0 0;
+}
+.login-box .login a {
+	color: #282828;
+	margin: 2px 0 0;
+}
+.login-box a {
+	display: block;
+	float: left;
+	text-transform: uppercase;
+}
+a.contact {
+	display: block;
+	background: #ee4400;
+	padding: 15px 54px 15px 55px;
+	font: 13px/15px "PTSerif-Italic";
+	color: #fff;
+	text-decoration: none;
+}
+.menu-wrapper {
+	background: #282828;
+}
+.menu {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 1132px;
+}
+.navigation {
+	float: left;
+}
+.navigation ul,.navigation li {
+	float: left;
+}
+.navigation li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: 18px/20px "Oswald-Regular";
+	padding: 27px 18px;
+}
+.navigation li:hover a, .navigation li a.active {
+	background: #eb3c00;
+}
+.search {
+	float: right;
+	padding: 16px 0 0;
+}
+#search-field {
+	height: 40px;
+	text-transform: uppercase;
+	border: none;
+	padding: 9px 13px;
+	width: 239px;
+	float: left;
+	font-size: 14px;
+}
+#send {
+	cursor: pointer;
+	width: 30px;
+	height: 40px;
+	border: none;
+	float: right;
+	background: #fff url(../img/search.png) no-repeat 25% 50%;
+}
+/*--------------------Content---------------------*/
+#content {
+	max-width: 1142px;
+	margin: 0 auto;
+	padding: 0 5px 135px;
+	overflow: hidden;
+}
+#content h1 {
+	width: 66%;
+	margin: 0;
+	padding: 0 0 39px;
+	font: 48px/60px "Oswald-Regular";
+}
+#content p {
+	margin: 0;
+	padding: 0 0 35px;
+	width: 74%;
+	line-height: 36px;
+}
+#content .features h2 {
+	font: 18px/20px "PTSerif-Bold";
+	margin: 0 0 17px;
+}
+#content .features ul {
+	list-style: inside;
+	margin: 0 0 57px;
+}
+#content .features ul li {
+	font: 18px/20px "PTSerif-Regular"; 
+	padding: 0 0 7px;
+}
+#content .news h2 {
+	font: 14px/16px "Oswald-Regular";
+	text-transform: uppercase;
+	color: #eb3c00;
+	margin: 0 0 22px;
+}
+#content .news .pics {
+	margin: 0 -10px;
+}
+#content .news .pics:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+#content .news .pics figure {
+	width: 16.6667%;
+	float: left;
+	padding: 0 10px;
+}
+#content .news .pics img {
+	width: 100%;
+	height: auto;
+}
+#content .news .pics figcaption {
+	font: 18px/20px "Oswald-Light";
+	padding: 7px 5px 0 0;
+}
+/*---------------Footer----------------------*/
+#footer {
+	width: 100%;
+ 	overflow: hidden;
+ 	padding: 0 0 56px;
+}
+#footer a {
+	font: 14px/16px "Oswald-Light";
+	color: #282828;
+	float: right;
+	display: block;
+	padding: 0 26px 0 17px;
+	background: url(../img/up.png)  no-repeat 0 50%;
+}
+.sidr {
+	display: none;
+}
+a.menu-btn{
+	text-indent: -9999px;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+	width: 33px;
+	height: 33px;
+	position: relative;
+}
+a.menu-btn i{
+	display: none;
+	height: 3px;
+	background: #fff;
+}
+a.menu-btn:after{
+	display: block;
+	content: "";
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	bottom: 8px;
+	background: #fff;
+}
+a.menu-btn:before{
+	display: block;
+	content: "";
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	top: 11px;
+	background: #fff;
+}
+@media screen and (max-width: 1132px) {
+	#header {
+		padding: 30px 1% 51px;
+	}
+	.menu {
+		padding: 0 1% 0 0;
+	}
+	#content h1 {
+		padding: 0 1% 40px;
+	}
+	#content p {
+		padding: 0 1% 35px;
+	}
+	#content .features {
+		padding: 0 1%;
+	}
+	#content .news h2 {
+		padding: 0 0 0 1%;
+	}
+}
+@media screen and (max-width: 950px) {
+	#content h1, #content p {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 860px) {
+	#content .news .pics figure{
+		width: 33.333%;
+		padding: 10px;
+	}
+	#content .news .pics figcaption{
+		min-height: 50px;
+	}
+}
+@media screen and (min-width: 735px) {
+	html{
+		overflow: visible !important;
+	}
+	body{
+		position: relative !important;
+		width: 100% !important;
+		overflow: visible !important;
+		left: auto !important;
+	}
+	#sidr-main{
+		display: none !important;
+	}
+}
+@media screen and (max-width: 735px) {
+	.menu {
+		padding: 0 1% 15px 0;
+	}
+	.logo {
+		width: 100%;
+	}
+	.login-box {
+		width: 100%;
+	}
+	.login-box a {
+		float: right;
+	}
+	.navigation {
+		display: none;
+	}
+	.menu-btn-holder {
+		display: block;
+		float: left;
+		padding: 20px 0 0 3%;
+	}
+	a.menu-btn,a.menu-btn i {
+		display: block;
+	}
+	a.menu-btn:hover {
+		text-decoration: none;
+	}
+	/*--------------responsive menu -----------*/
+	.sidr {
+		position: fixed;
+		top: 0;
+		left: -175px;
+	}
+	.sidr .sidr-inner > ul {
+		padding: 50px 20px 0;
+	}
+	.sidr .sidr-inner > ul > li {
+		padding: 0 0 20px;
+	}
+	.sidr-class-drop-link > a {
+		text-decoration: underline;
+	}
+	.sidr .sidr-inner .sidr-class-drop {
+		padding: 0 0 0 40px;
+	}
+	.sidr .sidr-inner .sidr-class-drop li {
+		padding: 10px 0 0;
+	}
+	.sidr a {
+		color: #282828;
+		text-transform: uppercase;
+	}
+	/*--------------responsive menu end-----------*/
+}
+@media screen and (max-width: 700px) {
+	#content .news .pics figure{
+		width: 50%;
+	}
+	#content .news .pics figcaption{
+		font-size: 16px;
+		line-height: 18px;
+	}
+}
+@media screen and (max-width: 400px){
+	#content .news .pics figure{
+		width: 100%;
+	}
+	#content .news .pics figcaption{
+		text-align: center;
+	}
+	#content h1{
+		font-size: 33px;
+		line-height: 35px;
+	}
+	.logo a {
+		font-size: 38px;
+		line-height: 40px;
+	}
+}
